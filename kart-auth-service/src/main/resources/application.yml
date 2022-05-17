@@ -1,0 +1,29 @@
+server:
+  port:9002
+
+spring:
+  application:
+    name: AUTH-SERVICE
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

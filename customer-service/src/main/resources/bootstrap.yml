@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    discovery:
+      enabled: true
+    config:
+      enabled: true
+      uri: http://localhost:9296

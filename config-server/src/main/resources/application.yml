@@ -1,0 +1,22 @@
+server:
+  # config server port
+  port: 9296
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    discovery:
+      enabled: true
+    config:
+      server:
+        git:
+          uri: https://github.com/vadeghar/config-server-repo
+          cloneOnStart: true
+
+management:
+  security:
+    # disable security of the config server
+    enabled: false
+
+# https://howtodoinjava.com/spring-cloud/spring-cloud-config-server-git/
+# https://medium.com/@ijayakantha/microservices-centralized-configuration-with-spring-cloud-f2a1f7b78cc2
