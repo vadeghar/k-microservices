@@ -19,4 +19,4 @@ management:
     enabled: false
 
 # https://howtodoinjava.com/spring-cloud/spring-cloud-config-server-git/
-# https://medium.com/@ijayakantha/microservices-centralized-configuration-with-spring-cloud-f2a1f7b78cc2
+#  https://medium.com/@mool.smreeti/microservices-with-spring-boot-authentication-with-jwt-and-spring-security-6e10155d9db0
