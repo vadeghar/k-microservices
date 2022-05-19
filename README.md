@@ -5,7 +5,7 @@ Implementing a Micro Service architecture with below features
 1. Configuration Server for common propertis amonng different micro services
 2. API Gateway - Entry point for all micro services
 3. Eureka - Service discovery - whether the servic is up or down
-4. Logging - Maintaing trace id and span id's among all micro services **Yet to implement**
+4. Logging - Maintaing trace id and span id's among all micro services **Sleuth & Zipkin (Simple configuration, Nothing Fancy)**
 5. Hystrix - Implement circuit breaker **Yet to implement**
 
 6. Auth Server - Authentiaction for requests (Use OAtuh2.0, JWT) **Yet to implement**
