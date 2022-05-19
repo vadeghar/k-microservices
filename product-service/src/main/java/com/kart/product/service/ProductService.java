@@ -19,16 +19,19 @@ public class ProductService {
         this.productRepository = productRepository;
     }
     public List<ProductDto> getAll() {
+        log.info("Inside getAll of ProductService");
         List<Product> dbList = productRepository.findAll();
         return dbList.stream().map(p->entityToDto(p)).collect(Collectors.toList());
     }
 
     public ProductDto save(ProductDto productDto) {
+        log.info("Inside save of ProductService");
         Product savedProduct = productRepository.save(dtoToEntity(productDto));
         return entityToDto(savedProduct);
     }
 
     public ProductDto get(Long id) {
+        log.info("Inside get of ProductService");
         Product product = productRepository.getById(id);
         return entityToDto(product);
     }

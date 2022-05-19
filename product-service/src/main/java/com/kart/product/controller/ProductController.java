@@ -20,16 +20,19 @@ public class ProductController {
 
     @PostMapping("save")
     public ProductDto save(@RequestBody ProductDto productDto) {
+        log.info("Inside save of ProductController");
         return productService.save(productDto);
     }
 
     @GetMapping
     public ProductDto getById(@RequestParam(name = "id", required = true) Long id) {
+        log.info("Inside getById of ProductController");
         return productService.get(id);
     }
 
     @GetMapping("all")
     public List<ProductDto> getAll() {
+        log.info("Inside getAll of ProductController");
         return productService.getAll();
     }
 
